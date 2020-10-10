@@ -2,7 +2,14 @@ body {
   margin: 0px;
 }
 
+#bg {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
 .myBox {
   transition: all .2s;
 }
-
