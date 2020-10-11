@@ -36,7 +36,7 @@ span, p, li {
   cursor: pointer;
   transition: all .5s;
 
-  padding-right: 10px;
+  padding: 5px;
 }
 #navigation span:hover {
   text-decoration: underline;
