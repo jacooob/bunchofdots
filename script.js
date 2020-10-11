@@ -1,20 +1,8 @@
 const bg = document.querySelector('#bg');
-const pages = 4;
-var active = [0,0,0,0];
-
-const fx_in_input = document.querySelector('#a_in');
-var fx_in = fx_in_input.value;
-
-fx_in_input.onchange = function() {
-  fx_in = fx_in_input.value;
-}
-
-const fx_out_input = document.querySelector('#a_out');
-var fx_out = fx_out_input.value;
-
-fx_out_input.onchange = function() {
-  fx_out = fx_out_input.value;
-}
+const pages = 3;
+var active = [0,0,0];
+var fx_in = 'fadeInUp';
+var fx_out = 'fadeOutRight';
 
 function openPage(v) {
   if(active[v]) {
@@ -36,7 +24,7 @@ function openPage(v) {
           document.querySelector('#page'+v).classList.remove('hidden');
           animateCSS('#page'+v, fx_in);
         }
-      
+
     }
   }
 }

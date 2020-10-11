@@ -1,5 +1,20 @@
+/* CSS HEX
+--jet: #343434;
+--space-cadet: #2f3061;
+--maximum-red: #d62828;
+--marigold: #f4ac32;
+--cool-grey: #938ba1;
+--white: #ffffff;
+--eerie-black: #1f1f1f;
+*/
+
+
+*{
+  font-family: sans-serif;
+}
+
 #bg {
-  background: url('squares.png');
+  background: url('images/squares.png');
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -9,17 +24,19 @@
 }
 #navigation {
   background-color: #fff;
-  border: 10px solid black;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  border: 10px solid #343434;
   padding: 10px;
+  max-width: 800px;
+  margin-left:auto;
+  margin-right:auto;
   box-shadow: 5px 5px rgba(158, 165, 177, 0.7);
 }
 
 #navigation span {
   cursor: pointer;
   transition: all .5s;
+
+  padding-right: 10px;
 }
 #navigation span:hover {
   text-decoration: underline;
@@ -29,7 +46,13 @@
   visibility: hidden;
 }
 .page {
-  position: fixed;
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  max-width: 800px;
+  margin-left:auto;
+  margin-right:auto;
   padding: 10px;
   background-color: #fff;
   border: 10px solid black;
@@ -37,31 +60,33 @@
 }
 
 #content {
-  position: absolute;
-  top: 80px;
-  left: 10px;
+  position:relative;
+  margin-top: 10px;
 }
 
 body {
-    background: linear-gradient(283deg, #ea2468, #ffe300, #0098ff, #ffe300, #ea2468);
-    background-size: 1000% 1000%;
-    -webkit-animation: bg 29s ease infinite;
-    -moz-animation: bg 29s ease infinite;
-    animation: bg 29s ease infinite;
+    background: linear-gradient(335deg, #ffffff, #ffffff, #f72e0d, #ffee00, #00a3ff, #ffffff, #ffffff, #ffffff, #ffffff);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: AnimationName 59s ease infinite;
+    -moz-animation: AnimationName 59s ease infinite;
+    animation: AnimationName 59s ease infinite;
+
+    overflow: hidden;
 }
 
-@-webkit-keyframes bg {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
-@-moz-keyframes bg {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
-@keyframes bg {
-    0%{background-position:0% 87%}
-    50%{background-position:100% 14%}
-    100%{background-position:0% 87%}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 51%}
+    100%{background-position:0% 50%}
 }
