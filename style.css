@@ -1,5 +1,5 @@
 #bg {
-  background: url('gridlines.png');
+  background: url('squares.png');
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -11,16 +11,39 @@
   background-color: #fff;
   border: 10px solid black;
   position: absolute;
-  top: 50px;
-  left: 50px;
-  padding: 20px;
-  box-shadow: 10px 10px rgba(194, 204, 219, 0.7);
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px rgba(158, 165, 177, 0.7);
+}
+
+#navigation span {
+  cursor: pointer;
+  transition: all .5s;
+}
+#navigation span:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.page {
+  position: fixed;
+  padding: 10px;
+  background-color: #fff;
+  border: 5px solid black;
+  box-shadow: 5px 5px rgba(158, 165, 177, 0.7);
+}
+
+#content {
+  position: absolute;
+  top: 80px;
 }
 
 body {
     background: linear-gradient(283deg, #ea2468, #ffe300, #0098ff, #ffe300, #ea2468);
     background-size: 1000% 1000%;
-
     -webkit-animation: bg 29s ease infinite;
     -moz-animation: bg 29s ease infinite;
     animation: bg 29s ease infinite;
@@ -40,26 +63,4 @@ body {
     0%{background-position:0% 87%}
     50%{background-position:100% 14%}
     100%{background-position:0% 87%}
-}
-
-.page {
-  position: absolute;
-  top: 50px;
-  left: 200px;
-  width: 400px;
-  height: 100px;
-  background-color: #fff;
-  border: 10px solid black;
-}
-
-#page2 {
-  top: 100px;
-}
-
-#page3 {
-
-}
-
-#page4 {
-
 }
