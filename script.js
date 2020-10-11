@@ -4,6 +4,7 @@ var active = [0,0,0];
 var fx_in = 'fadeInUp';
 var fx_out = 'fadeOutRight';
 
+
 function openPage(v) {
   if(active[v]) {
     active[v] = 0;
